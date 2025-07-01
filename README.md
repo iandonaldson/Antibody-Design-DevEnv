@@ -15,7 +15,6 @@ A GitHub Codespaces-ready environment for testing RFdiffusion + ProteinMPNN + Al
 1. Open in GitHub Codespaces
 2. Run `./pipeline.sh` to test setup
 
-Excellent! You're ready to polish the repo and show domain alignment. Here are the references you should include in the **`README.md`**, along with example citations and links you can use for **Phase 2** documentation:
 
 ---
 
@@ -33,27 +32,15 @@ This issue outlines the use of **template conditioning** in **RFdiffusion** for 
 
 ---
 
-### 🧪 **2. Karatt-Vellatt et al., 2025 – Antibody Design with Generative Models**
+### 🧪 **2. Bielska et al., 2025 – Applying computational protein design to therapeutic antibody discovery**
 
 **Citation**:
 
-> Karatt-Vellatt, A., Liu, J., & McCafferty, J. (2025). *Applying computational protein design to therapeutic antibody discovery – current state and perspectives*. Preprint on ResearchGate.
-> [https://www.researchgate.net/publication/391977499](https://www.researchgate.net/publication/391977499)
-
+> Bielska W, Jaszczyszyn I, Dudzic P, Janusz B, Chomicz D, Wrobel S, Greiff V, Feehan R, Adolf-Bryfogle J, Krawczyk K. Applying computational protein design to therapeutic antibody discovery - current state and perspectives. Front Immunol. 2025 May 22;16:1571371. doi: 10.3389/fimmu.2025.1571371. PMID: 40475769; PMCID: PMC12137305.
+> [https://pubmed.ncbi.nlm.nih.gov/40475769/](PubMed)
+> 
 **Context**:
-This 2025 article by Maxion’s CSO outlines how **RFdiffusion**, **AlphaFold**, and **ProteinMPNN** are used in structure-based therapeutic design workflows. This pipeline replicates that logic using synthetic inputs.
-
----
-
-```markdown
-## References
-
-1. RosettaCommons. *Feature request: conditional sampling for antibody CDR loops with RFdiffusion*. GitHub Issue #320.  
-   https://github.com/RosettaCommons/RFdiffusion/issues/320
-
-2. Karatt-Vellatt, A., Liu, J., & McCafferty, J. (2025). *Applying computational protein design to therapeutic antibody discovery – current state and perspectives*.  
-   https://www.researchgate.net/publication/391977499
-```
+This 2025 article outlines how **RFdiffusion**, **AlphaFold**, and **ProteinMPNN** are used in structure-based therapeutic design workflows. This pipeline replicates that logic using synthetic inputs.
 
 ---
 
