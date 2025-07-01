@@ -5,5 +5,5 @@ biopython
 pandas
 matplotlib
 py3Dmol
-colabfold
-jax[cpu]
+# brings alphafold + matching jax/jaxlib wheels
+colabfold[alphafold]==1.5.4
