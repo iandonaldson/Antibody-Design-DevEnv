@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# ---- Python deps ----
-# requirements.txt lives in the workspace root, so use ../
-COPY ../requirements.txt /tmp/requirements.txt
-RUN pip install --upgrade pip \
-    && pip install -r /tmp/requirements.txt
+
+# Python deps
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --upgrade pip && \
+    pip install -r /tmp/requirements.txt
