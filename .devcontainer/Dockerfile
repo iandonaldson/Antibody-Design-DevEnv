@@ -5,5 +5,6 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt /tmp/
-RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
+RUN pip install --upgrade pip
+COPY requirements.txt .
+RUN pip install -r requirements.txt
