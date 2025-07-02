@@ -1,9 +1,21 @@
-numpy
-scipy
-torch
-biopython
-pandas
-matplotlib
-py3Dmol
-# brings alphafold + matching jax/jaxlib wheels
-colabfold[alphafold]==1.5.4
+# --- core versions that ColabFold 1.5.4 likes -----------------
+jax==0.4.35
+jaxlib==0.4.35+cpu      # <- “+cpu” wheel, tens of MB instead of ~90 MB
+alphafold-colabfold>=2.3.4
+colabfold==1.5.4
+
+# PyTorch – CPU build (≈150 MB)
+torch==2.3.1+cpu        # latest stable; small enough and works fine
+torchvision==0.18.1+cpu # if you need it
+torchaudio==2.3.1+cpu   # optional
+
+# Tell pip where to grab the CPU wheels for PyTorch
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Everything else (keep your scientific stack)
+numpy==1.26.4
+scipy==1.15.3
+pandas==1.5.3
+matplotlib==3.10.3
+biopython==1.82
+py3Dmol==2.5.1

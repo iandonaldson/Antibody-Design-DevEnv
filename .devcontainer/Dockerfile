@@ -10,5 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # Python deps
 COPY requirements.txt /tmp/requirements.txt
+# before RUN pip install …
+ENV PIP_NO_CACHE_DIR=1
 RUN pip install --upgrade pip && \
     pip install -r /tmp/requirements.txt
