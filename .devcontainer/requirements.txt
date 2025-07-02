@@ -5,7 +5,7 @@
 # --------------- ColabFold core ---------------
 jax==0.4.35
 jaxlib==0.4.35          # or 0.4.35+cpu if you add the find-links line
-alphafold-colabfold>=2.3.4
+alphafold-colabfold==2.3.4
 colabfold==1.5.4
 
 # --------------- PyTorch (CPU) ---------------
