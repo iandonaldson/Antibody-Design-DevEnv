@@ -16,11 +16,11 @@ A GitHub Codespaces-ready environment for testing RFdiffusion + ProteinMPNN + Al
 2. Run `./pipeline.sh` to test setup
 
 ## Tests
-colabfold_batch toy.fasta test_out/
-colabfold_batch toy_dimer.fasta dimer_out/ --model-type alphafold2_multimer_v3
+colabfold_batch toy.fasta test_out/  
+colabfold_batch toy_dimer.fasta dimer_out/ --model-type alphafold2_multimer_v3  
 
-Continue here
-See data analysis/Ab design with AI
+Continue here  
+See data analysis/Ab design with AI  
 ---
 
 ## 📚 References
